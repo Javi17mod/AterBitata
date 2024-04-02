@@ -1,0 +1,22 @@
+name: Ejemplo de Ejecución de index.js
+
+on:
+  push:
+    branches:
+      - main  # Cambia 'main' por el nombre de tu rama principal si es diferente
+  schedule:
+    - cron: '0 * * * *'  # Esto ejecutará la acción cada hora
+
+jobs:
+  ejecutar_index_js:
+    runs-on: ubuntu-latest  # Puedes cambiar a otro sistema operativo si es necesario
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v2
+
+    - name: Instalar dependencias
+      run: npm install
+
+    - name: Ejecutar index.js
+      run: node index.js
