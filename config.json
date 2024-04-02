@@ -1,0 +1,11 @@
+{
+    "ip": "Javi17mod.aternos.me",
+    "port": "11270",
+    "name": "RandomJavi17mod",
+    "auto-reconnect": "true",
+    "comment": "If True Then Bot Will Skip Night",
+    "login-enabled": "true",
+    "comment": "If True Then Bot Will Login/Register",
+    "register-cmd": "/register {bot123} {bot123}",
+    "login-cmd": "/login {bot123}"
+   }
